@@ -41,6 +41,8 @@ const replyText = (token, texts) => {
     );
 };
 
+const { message1 } = require('./messages/message1');
+
 // callback function to handle a single event
 function handleEvent(event) {
     switch (event.type) {
@@ -48,7 +50,7 @@ function handleEvent(event) {
             const message = event.message;
             switch (message.type) {
                 case 'text':
-                    return handleText(message, event.replyToken);
+                    return handleText(message1, event.replyToken);
                 case 'image':
                     return handleImage(message, event.replyToken);
                 case 'video':
@@ -76,7 +78,7 @@ function handleEvent(event) {
             return console.log(`Left: ${JSON.stringify(event)}`);
 
         case 'postback':
-            let data = event.postback.data;
+            const data = event.postback.data;
             return replyText(event.replyToken, `Got postback: ${data}`);
 
         case 'beacon':

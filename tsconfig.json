@@ -1,0 +1,15 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "allowJs": true,
+        "module": "commonjs",
+        "esModuleInterop": false,
+        "jsx": "preserve"
+    },
+    "exclude": [
+        "./node_modules/**/*"
+    ],
+    "files": [
+        "./messages"
+    ]
+}

@@ -2,8 +2,11 @@
     "extends": "standard",
     "rules": {
         "semi": [1, "always"],
-        "comma-dangle": [2, "always-multiline"],
+        "comma-dangle": [0, "standard"],
         "space-before-function-paren": [0, "always"],
-        "jsx-quotes": ["error", "prefer-double"]
+        "jsx-quotes": ["off", "prefer-double"],
+        "space-before-blocks": "off",
+        "indent":"off",
+        "eol-last":"off"
       }
 }
