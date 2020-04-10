@@ -41,7 +41,7 @@ const replyText = (token, texts) => {
     );
 };
 
-const { message1 } = require('./messages/message1');
+const { message1 } = require('./messages');
 
 // callback function to handle a single event
 function handleEvent(event) {
