@@ -41,7 +41,7 @@ const replyText = (token, texts) => {
     );
 };
 
-const { message1 } = require('./messages');
+const { message1, data1 } = require('./messages');
 
 // callback function to handle a single event
 function handleEvent(event) {
@@ -79,8 +79,12 @@ function handleEvent(event) {
 
         case 'postback':
             const data = event.postback.data;
-            return replyText(event.replyToken, `Got postback: ${data}`);
-
+            switch (data) {
+                case 'data1':
+                    return replyText(event.replyToken, data1);
+                default:
+                    return replyText(event.replyToken, `Got postback: ${data}`);
+            }
         case 'beacon':
             const dm = `${Buffer.from(event.beacon.dm || '', 'hex').toString('utf8')}`;
             return replyText(event.replyToken, `${event.beacon.type} beacon hwid : ${event.beacon.hwid} with device message = ${dm}`);
