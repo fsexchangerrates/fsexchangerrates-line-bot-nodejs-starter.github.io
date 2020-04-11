@@ -9,7 +9,7 @@
     },
     "files": [
         "./node_modules",
-        "./messages.js"
+        "./messagesTemp"
     ],
     "keywords": [
         "line",

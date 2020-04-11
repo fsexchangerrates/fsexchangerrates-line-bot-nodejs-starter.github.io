@@ -1,0 +1,137 @@
+{
+    "type": "flex",
+    "altText": "message1",
+    "contents": {
+        "type": "carousel",
+        "contents": [{
+                "type": "bubble",
+                "size": "mega",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [{
+                            "type": "image",
+                            "url": "https://fsexchanger.files.wordpress.com/2020/04/r4-b.jpg",
+                            "margin": "none",
+                            "align": "center",
+                            "gravity": "center",
+                            "size": "full",
+                            "aspectRatio": "1:1",
+                            "aspectMode": "cover"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [{
+                                "type": "text",
+                                "text": "Member Area",
+                                "color": "#ffffff",
+                                "size": "xxl",
+                                "align": "center",
+                                "weight": "bold",
+                                "gravity": "center"
+                            }],
+                            "position": "absolute",
+                            "cornerRadius": "20px",
+                            "paddingAll": "10px",
+                            "offsetTop": "40%",
+                            "offsetStart": "10%",
+                            "offsetEnd": "10%"
+                        }
+                    ],
+                    "spacing": "none",
+                    "margin": "none",
+                    "cornerRadius": "10px",
+                    "paddingAll": "0px"
+                }
+            },
+            {
+                "type": "bubble",
+                "size": "mega",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [{
+                            "type": "image",
+                            "url": "https://fsexchanger.files.wordpress.com/2020/04/unnamed-11.jpg",
+                            "margin": "none",
+                            "align": "center",
+                            "gravity": "center",
+                            "size": "full",
+                            "aspectRatio": "1:1",
+                            "aspectMode": "cover"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [{
+                                "type": "text",
+                                "text": "Check Currency Rates",
+                                "size": "xl",
+                                "color": "#ffffff",
+                                "align": "center",
+                                "gravity": "center"
+                            }],
+                            "position": "absolute",
+                            "backgroundColor": "#004d85",
+                            "cornerRadius": "20px",
+                            "borderWidth": "1px",
+                            "borderColor": "#e9e9e9",
+                            "offsetTop": "43%",
+                            "offsetStart": "5%",
+                            "offsetEnd": "5%",
+                            "spacing": "md",
+                            "margin": "md",
+                            "paddingAll": "10px"
+                        }
+                    ],
+                    "spacing": "none",
+                    "margin": "none",
+                    "cornerRadius": "10px",
+                    "paddingAll": "0px"
+                }
+            },
+            {
+                "type": "bubble",
+                "size": "mega",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [{
+                            "type": "image",
+                            "url": "https://fsexchanger.files.wordpress.com/2020/04/r2012.jpg",
+                            "margin": "none",
+                            "align": "center",
+                            "gravity": "center",
+                            "size": "full",
+                            "aspectRatio": "1:1",
+                            "aspectMode": "cover"
+                        },
+                        {
+                            "type": "button",
+                            "action": {
+                                "type": "postback",
+                                "label": "flex1 item 7",
+                                "data": "data7",
+                                "displayText": "flex1 item 7"
+                            },
+                            "position": "absolute",
+                            "margin": "xxl",
+                            "height": "md",
+                            "style": "primary",
+                            "color": "#004d85",
+                            "gravity": "center",
+                            "offsetBottom": "13px",
+                            "offsetStart": "20px",
+                            "offsetEnd": "20px"
+                        }
+                    ],
+                    "spacing": "none",
+                    "margin": "none",
+                    "cornerRadius": "10px",
+                    "paddingAll": "0px"
+                }
+            }
+        ]
+    }
+}
