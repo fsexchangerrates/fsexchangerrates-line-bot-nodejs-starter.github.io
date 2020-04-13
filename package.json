@@ -9,14 +9,19 @@
     },
     "files": [
         "./node_modules",
-        "./messagesTemp"
+        "./messagesTemp",
+        "meesage.js"
     ],
     "keywords": [
         "line",
         "bot",
         "messaging-api"
     ],
-    "author": "Sitthi Thiammekha",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fsexchangerrates/fsexchangerrates-line-bot-nodejs-starter.github.io.git"
+    },
+    "author": "Chonthicha Yaver",
     "license": "ISC",
     "devDependencies": {
         "eslint": "^5.16.0",

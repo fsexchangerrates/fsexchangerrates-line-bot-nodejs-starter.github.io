@@ -11,6 +11,7 @@
     },
     "files": [
         "./messages.js",
+        "./messagesTemp"
     ],
     "include": [
         "./node_modules"
