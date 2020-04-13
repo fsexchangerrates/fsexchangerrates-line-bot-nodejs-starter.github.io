@@ -1,7 +1,34 @@
-const message1 = require('./messagesTemp/message1.json');
-module.exports.message1 = message1;
+const messages = (messageId) => {
+    messageId = String(messageId) ? messageId : messageId;
+    switch (messageId) {
+        case 'messageId1':
+            return msg1;
+        case 'messageId2':
+            break;
+        case 'messageId3':
+            break;
+        case 'messageId4':
+            break;
+        case 'messageId5':
+            break;
+        case 'messageId6':
+            break;
+        case 'messageId7':
+            break;
+        case 'messageId8':
+            break;
+        case 'messageId9':
+            break;
+        case 'messageId10':
+            break;
+        default:
+            console.log('messageId', messageId);
+            break;
+    }
+};
+module.exports.messages = messages;
 
-const data1 = {
+const msg1 = {
     type: 'carousel',
     contents: [{
             type: 'bubble',
@@ -25,4 +52,4 @@ const data1 = {
         }
     ]
 };
-module.exports.data1 = data1;
+module.exports.msg1 = msg1;

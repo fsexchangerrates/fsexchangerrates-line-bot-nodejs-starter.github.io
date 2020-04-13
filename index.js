@@ -9,6 +9,9 @@ const client = new line.Client(config);
 
 const app = express();
 
+app.get('/webhook', line.middleware(config), () => {
+    console.log('I am listening. Go see post');
+});
 // webhook callback
 app.post('/webhook', line.middleware(config), (req, res) => {
     // req.body.events should be an array of events
@@ -32,6 +35,11 @@ app.post('/webhook', line.middleware(config), (req, res) => {
         });
 });
 
+const linkRichMenuToUser = (userId, richMenuId) => {
+    return client.linkRichMenuToUser(userId, richMenuId);
+};
+console.log('linkRichMenuToUser', linkRichMenuToUser);
+
 // simple reply function
 const replyText = (token, texts) => {
     texts = Array.isArray(texts) ? texts : [texts];
@@ -41,16 +49,23 @@ const replyText = (token, texts) => {
     );
 };
 
-const { message1, data1 } = require('./messages');
+const message1 = require('./messagesTemp/message1.json');
+const data1 = require('./messagesTemp/data1.json');
+let richMenuId1 = 'ur46il;-ufki75rrf';
+let richMenuId2 = 'jyrsscvgu8oolncsqtthh';
 
 // callback function to handle a single event
 function handleEvent(event) {
+    if (event.replyToken && event.replyToken.match(/^(\*)/i)) {
+        console.log('replyToken: ' + event.replyText, JSON.stringify(event.message));
+    }
+
     switch (event.type) {
         case 'message':
             const message = event.message;
             switch (message.type) {
                 case 'text':
-                    return handleText(message1, event.replyToken);
+                    return handleText(message, event.replyToken);
                 case 'image':
                     return handleImage(message, event.replyToken);
                 case 'video':
@@ -80,6 +95,10 @@ function handleEvent(event) {
         case 'postback':
             const data = event.postback.data;
             switch (data) {
+                case 'next':
+                    return linkRichMenuToUser(event.source.userId, `${richMenuId2}`);
+                case 'previous':
+                    return linkRichMenuToUser(event.source.userId, `${richMenuId1}`);
                 case 'data1':
                     return replyText(event.replyToken, data1);
                 default:
@@ -94,7 +113,17 @@ function handleEvent(event) {
     }
 }
 
+const temp1 = require('./messagesTemp/temp1.json');
+
 function handleText(message, replyToken) {
+    switch (message.text) {
+        case 'carousel':
+            return client.replyMessage(replyToken, message1);
+        case 'confirm':
+            return client.replyMessage(replyToken, temp1);
+        case 'cancel':
+            return client.replyMessage(replyToken, message.text);
+    }
     return replyText(replyToken, message.text);
 }
 

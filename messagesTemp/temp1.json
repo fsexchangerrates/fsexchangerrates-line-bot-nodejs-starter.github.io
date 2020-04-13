@@ -1,0 +1,12 @@
+{
+    "type": "template",
+    "title": "confirm",
+    "buttons": [{
+        "type": "button",
+        "action": {
+            "type": "postback",
+            "label": "buy paypal",
+            "data": "action: 'buy'?itemId=paypal"
+        }
+    }]
+}
