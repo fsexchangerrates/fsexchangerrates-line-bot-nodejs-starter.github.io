@@ -1,11 +1,12 @@
 import greeting from './messagesTemp/greeting.json';
+import paypal from './messagesTemp/paypal.json';
 
-const messages = (type?: string) => {
-    switch (type) {
+const messages = (texts?: string) => {
+    switch (texts) {
         case 'greeting':
-            return greeting;
-        case 'carousel':
-           break;
+            return  greeting;
+        case 'paypal':
+           return paypal;
         case 'messageId3':
             break;
         case 'messageId4':
@@ -23,16 +24,10 @@ const messages = (type?: string) => {
         case 'messageId10':
             break;
         default:
-            console.log('type', type);
-            break;
+            console.log('texts', texts);
+            return texts;
+            
     }
 };
 const _messages = messages;
 export { _messages as messages };
-
-import paypal from './messagesTemp/paypal.json';
-const texts = (text?: any) => {
-    return text = paypal;
-}
-const _texts = texts;
-export { _texts as texts };
