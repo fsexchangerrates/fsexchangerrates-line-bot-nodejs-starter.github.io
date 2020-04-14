@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npm run-all;"
     },
     "files": [
         "./node_modules",
@@ -21,7 +22,7 @@
         "type": "git",
         "url": "https://github.com/fsexchangerrates/fsexchangerrates-line-bot-nodejs-starter.github.io.git"
     },
-    "author": "Chonthicha Yaver",
+    "author": "Sitthi Thiammekha",
     "license": "ISC",
     "devDependencies": {
         "eslint": "^5.16.0",

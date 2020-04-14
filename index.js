@@ -4,16 +4,26 @@ const line = require('@line/bot-sdk');
 const express = require('express');
 const config = require('./config.json');
 
+const message1 = require('./messagesTemp/message1.json');
+const data1 = require('./messagesTemp/data1.json');
+const greeting = require('./messagesTemp/greeting.json');
+const paypal = require('./messagesTemp/paypal.json');
+const webMoney = require('./messagesTemp/webMoney.json');
+let richMenuId1 = 'ur46il;-ufki75rrf';
+let richMenuId2 = 'jyrsscvgu8oolncsqtthh';
+
+let baseUrl = config.baseUrl;
+
 // create LINE SDK client
 const client = new line.Client(config);
 
 const app = express();
 
-app.get('/', line.middleware(config), (req, res) => {
+app.get('/webhook', line.middleware(config), (req, res) => {
     console.log('I am listening. Go see post');
 });
 // webhook callback
-app.post('/', line.middleware(config), (req, res) => {
+app.post('/webhook', line.middleware(config), (req, res) => {
     // req.body.events should be an array of events
     if (!Array.isArray(req.body.events)) {
         return res.status(500).end();
@@ -35,8 +45,8 @@ app.post('/', line.middleware(config), (req, res) => {
         });
 });
 
-const linkRichMenuToUser = (userId, richMenuId) => {
-    return client.linkRichMenuToUser(userId, richMenuId);
+async function linkRichMenuToUser(userId, richMenuId) {
+    await client.linkRichMenuToUser(userId, richMenuId);
 };
 console.log('linkRichMenuToUser', linkRichMenuToUser);
 
@@ -48,15 +58,6 @@ const replyText = (token, texts) => {
         texts.map((text) => ({ type: 'text', text }))
     );
 };
-
-const message1 = require('./messagesTemp/message1.json');
-const data1 = require('./messagesTemp/data1.json');
-const greeting = require('./messagesTemp/greeting.json');
-const paypal = require('./messagesTemp/paypal.json');
-const webMoney = require('./messagesTemp/webMoney.json');
-let richMenuId1 = 'ur46il;-ufki75rrf';
-let richMenuId2 = 'jyrsscvgu8oolncsqtthh';
-
 // callback function to handle a single event
 function handleEvent(event) {
     switch (event.type) {
@@ -80,7 +81,7 @@ function handleEvent(event) {
             }
 
         case 'follow':
-            return replyText(event.replyToken, 'Got followed event');
+            return replyText(event.replyToken, 'Got followed event: ' + `${JSON.stringify(greeting)}`);
 
         case 'unfollow':
             return console.log(`Unfollowed this bot: ${JSON.stringify(event)}`);
