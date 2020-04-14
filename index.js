@@ -20,8 +20,8 @@ const client = new line.Client(config);
 
 const app = express();
 
-app.use(line.middleware(config));
-app.use(client.replyMessage());
+app.use(line);
+app.use(client);
 
 app.use(baseUrl);
 app.use(ngrok('https', config.port));
