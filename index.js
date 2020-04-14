@@ -9,11 +9,11 @@ const client = new line.Client(config);
 
 const app = express();
 
-app.get('/webhook', line.middleware(config), () => {
+app.get('/', line.middleware(config), (req, res) => {
     console.log('I am listening. Go see post');
 });
 // webhook callback
-app.post('/webhook', line.middleware(config), (req, res) => {
+app.post('/', line.middleware(config), (req, res) => {
     // req.body.events should be an array of events
     if (!Array.isArray(req.body.events)) {
         return res.status(500).end();
@@ -51,15 +51,14 @@ const replyText = (token, texts) => {
 
 const message1 = require('./messagesTemp/message1.json');
 const data1 = require('./messagesTemp/data1.json');
+const greeting = require('./messagesTemp/greeting.json');
+const paypal = require('./messagesTemp/paypal.json');
+const webMoney = require('./messagesTemp/webMoney.json');
 let richMenuId1 = 'ur46il;-ufki75rrf';
 let richMenuId2 = 'jyrsscvgu8oolncsqtthh';
 
 // callback function to handle a single event
 function handleEvent(event) {
-    if (event.replyToken && event.replyToken.match(/^(\*)/i)) {
-        console.log('replyToken: ' + event.replyText, JSON.stringify(event.message));
-    }
-
     switch (event.type) {
         case 'message':
             const message = event.message;
@@ -101,6 +100,12 @@ function handleEvent(event) {
                     return linkRichMenuToUser(event.source.userId, `${richMenuId1}`);
                 case 'data1':
                     return replyText(event.replyToken, data1);
+                case 'greeting':
+                    return replyText(event.replyToken, greeting);
+                case 'paypal':
+                    return replyText(event.replyToken, paypal);
+                case 'webMoney':
+                    return replyText(event.replyToken, webMoney);
                 default:
                     return replyText(event.replyToken, `Got postback: ${data}`);
             }

@@ -1,0 +1,962 @@
+{
+    "type": "carousel",
+    "contents": [{
+            "type": "bubble",
+            "size": "mega",
+            "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [{
+                        "type": "spacer",
+                        "size": "md"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ราคารับซื้อ",
+                        "flex": 0,
+                        "size": "sm",
+                        "color": "#666666",
+                        "weight": "bold",
+                        "position": "relative",
+                        "align": "center",
+                        "gravity": "center"
+                    },
+                    {
+                        "type": "text",
+                        "text": "PayPal - ดอลลาร์สหรัฐฯ",
+                        "flex": 0,
+                        "size": "sm",
+                        "color": "#666666",
+                        "align": "center",
+                        "gravity": "center",
+                        "style": "normal",
+                        "weight": "regular"
+                    }
+                ],
+                "flex": 0,
+                "spacing": "sm",
+                "width": "100%",
+                "backgroundColor": "#f9f9f9",
+                "paddingAll": "md"
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [{
+                        "type": "spacer",
+                        "size": "sm"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "margin": "md",
+                        "contents": [{
+                                "type": "icon",
+                                "size": "sm",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "icon",
+                                "size": "sm",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "icon",
+                                "size": "sm",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "icon",
+                                "size": "sm",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "icon",
+                                "size": "sm",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
+                            },
+                            {
+                                "type": "text",
+                                "text": "4.0",
+                                "size": "sm",
+                                "color": "#999999",
+                                "margin": "md",
+                                "flex": 0
+                            }
+                        ],
+                        "paddingStart": "md",
+                        "paddingEnd": "md"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "spacing": "xs",
+                        "contents": [{
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "จำนวน",
+                                    "color": "#ffffff",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "weight": "bold"
+                                }],
+                                "flex": 5,
+                                "backgroundColor": "#004a85",
+                                "borderWidth": "1px",
+                                "borderColor": "#004c85",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md",
+                                "spacing": "xs",
+                                "paddingEnd": "md"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "ราคา",
+                                    "color": "#004d75",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "weight": "bold"
+                                }],
+                                "flex": 3,
+                                "backgroundColor": "#f9f9f9",
+                                "borderWidth": "1px",
+                                "borderColor": "#dddddd",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            }
+                        ],
+                        "flex": 0,
+                        "paddingStart": "md",
+                        "paddingEnd": "md",
+                        "margin": "xs"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "spacing": "xs",
+                        "contents": [{
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "$100 - $500",
+                                    "color": "#ffffff",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "end",
+                                    "gravity": "center",
+                                    "weight": "regular",
+                                    "offsetEnd": "sm"
+                                }],
+                                "flex": 5,
+                                "backgroundColor": "#004a85",
+                                "borderWidth": "1px",
+                                "borderColor": "#004c85",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "฿ 25.00",
+                                    "color": "#004d75",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "weight": "regular"
+                                }],
+                                "flex": 3,
+                                "backgroundColor": "#f9f9f9",
+                                "borderWidth": "1px",
+                                "borderColor": "#dddddd",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            }
+                        ],
+                        "flex": 0,
+                        "paddingStart": "md",
+                        "paddingEnd": "md",
+                        "margin": "xs"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "spacing": "xs",
+                        "contents": [{
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "$501 - $1,000",
+                                    "color": "#ffffff",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "end",
+                                    "gravity": "center",
+                                    "weight": "regular",
+                                    "offsetEnd": "sm"
+                                }],
+                                "flex": 5,
+                                "backgroundColor": "#004a85",
+                                "borderWidth": "1px",
+                                "borderColor": "#004c85",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "฿ 25.25",
+                                    "color": "#004d75",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "weight": "regular"
+                                }],
+                                "flex": 3,
+                                "backgroundColor": "#f9f9f9",
+                                "borderWidth": "1px",
+                                "borderColor": "#dddddd",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            }
+                        ],
+                        "flex": 0,
+                        "paddingStart": "md",
+                        "paddingEnd": "md",
+                        "margin": "xs"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "margin": "xs",
+                        "spacing": "xs",
+                        "contents": [{
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "$1,001 - $1,500",
+                                    "color": "#ffffff",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "end",
+                                    "gravity": "center",
+                                    "weight": "regular",
+                                    "offsetEnd": "sm"
+                                }],
+                                "flex": 5,
+                                "backgroundColor": "#004a85",
+                                "borderWidth": "1px",
+                                "borderColor": "#004c85",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "฿ 25.50",
+                                    "color": "#004d75",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "weight": "regular"
+                                }],
+                                "flex": 3,
+                                "backgroundColor": "#f9f9f9",
+                                "borderWidth": "1px",
+                                "borderColor": "#dddddd",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            }
+                        ],
+                        "flex": 0,
+                        "paddingStart": "md",
+                        "paddingEnd": "md"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "margin": "xs",
+                        "spacing": "xs",
+                        "contents": [{
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "$1,501 - $2,000",
+                                    "color": "#ffffff",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "end",
+                                    "gravity": "center",
+                                    "weight": "regular",
+                                    "offsetEnd": "md"
+                                }],
+                                "flex": 5,
+                                "backgroundColor": "#004a85",
+                                "borderWidth": "1px",
+                                "borderColor": "#004c85",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "฿ 25.75",
+                                    "color": "#004d75",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "weight": "regular"
+                                }],
+                                "flex": 3,
+                                "backgroundColor": "#f9f9f9",
+                                "borderWidth": "1px",
+                                "borderColor": "#dddddd",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            }
+                        ],
+                        "flex": 0,
+                        "paddingStart": "md",
+                        "paddingEnd": "md"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "margin": "xs",
+                        "spacing": "xs",
+                        "contents": [{
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "$2,001 - $10,000",
+                                    "color": "#ffffff",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "end",
+                                    "gravity": "center",
+                                    "weight": "regular",
+                                    "offsetEnd": "sm"
+                                }],
+                                "flex": 5,
+                                "backgroundColor": "#004a85",
+                                "borderWidth": "1px",
+                                "borderColor": "#004c85",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "฿ 26.00",
+                                    "color": "#004d75",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "weight": "regular"
+                                }],
+                                "flex": 3,
+                                "backgroundColor": "#f9f9f9",
+                                "borderWidth": "1px",
+                                "borderColor": "#dddddd",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            }
+                        ],
+                        "flex": 0,
+                        "paddingStart": "md",
+                        "paddingEnd": "md"
+                    },
+                    {
+                        "type": "spacer",
+                        "size": "md"
+                    }
+                ],
+                "flex": 0,
+                "spacing": "sm",
+                "backgroundColor": "#ffffff",
+                "paddingAll": "xs"
+            },
+            "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [{
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [{
+                            "type": "button",
+                            "style": "primary",
+                            "height": "md",
+                            "action": {
+                                "type": "uri",
+                                "label": "แจ้งโอน",
+                                "uri": "line://app/1609045774-gxlowX0E"
+                            },
+                            "color": "#004d85",
+                            "gravity": "center",
+                            "margin": "md"
+                        }],
+                        "position": "relative",
+                        "flex": 0,
+                        "spacing": "md",
+                        "paddingStart": "md",
+                        "paddingEnd": "md"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [{
+                            "type": "button",
+                            "style": "secondary",
+                            "height": "md",
+                            "action": {
+                                "type": "message",
+                                "label": "กลับเมนูหลัก",
+                                "text": "อัตราแลกเปลี่ยน"
+                            },
+                            "color": "#e9e9e9",
+                            "gravity": "center",
+                            "margin": "md"
+                        }],
+                        "position": "relative",
+                        "flex": 0,
+                        "spacing": "md",
+                        "paddingStart": "md",
+                        "paddingEnd": "md"
+                    },
+                    {
+                        "type": "spacer",
+                        "size": "md"
+                    }
+                ],
+                "flex": 0,
+                "width": "100%",
+                "backgroundColor": "#f9f9f9",
+                "paddingAll": "xs"
+            },
+            "styles": {
+                "body": {
+                    "backgroundColor": "#ffffff"
+                }
+            }
+        },
+        {
+            "type": "bubble",
+            "size": "mega",
+            "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [{
+                        "type": "spacer",
+                        "size": "md"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ราคาขาย",
+                        "flex": 0,
+                        "size": "sm",
+                        "color": "#666666",
+                        "weight": "bold",
+                        "position": "relative",
+                        "align": "center",
+                        "gravity": "center"
+                    },
+                    {
+                        "type": "text",
+                        "text": "PayPal - ดอลลาร์สหรัฐฯ",
+                        "flex": 0,
+                        "size": "sm",
+                        "color": "#666666",
+                        "align": "center",
+                        "gravity": "center",
+                        "style": "normal",
+                        "weight": "regular"
+                    }
+                ],
+                "flex": 0,
+                "spacing": "sm",
+                "width": "100%",
+                "backgroundColor": "#f9f9f9",
+                "paddingAll": "md"
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [{
+                        "type": "spacer",
+                        "size": "sm"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "margin": "md",
+                        "contents": [{
+                                "type": "icon",
+                                "size": "sm",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "icon",
+                                "size": "sm",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "icon",
+                                "size": "sm",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "icon",
+                                "size": "sm",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                            },
+                            {
+                                "type": "icon",
+                                "size": "sm",
+                                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
+                            },
+                            {
+                                "type": "text",
+                                "text": "4.0",
+                                "size": "sm",
+                                "color": "#999999",
+                                "margin": "md",
+                                "flex": 0
+                            }
+                        ],
+                        "paddingStart": "md",
+                        "paddingEnd": "md"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "spacing": "xs",
+                        "contents": [{
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "จำนวน",
+                                    "color": "#ffffff",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "weight": "bold"
+                                }],
+                                "flex": 5,
+                                "backgroundColor": "#004a85",
+                                "borderWidth": "1px",
+                                "borderColor": "#004c85",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md",
+                                "spacing": "xs",
+                                "paddingEnd": "md"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "ราคา",
+                                    "color": "#004d75",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "weight": "bold"
+                                }],
+                                "flex": 3,
+                                "backgroundColor": "#f9f9f9",
+                                "borderWidth": "1px",
+                                "borderColor": "#dddddd",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            }
+                        ],
+                        "flex": 0,
+                        "paddingStart": "md",
+                        "paddingEnd": "md",
+                        "margin": "xs"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "spacing": "xs",
+                        "contents": [{
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "$100 - $500",
+                                    "color": "#ffffff",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "end",
+                                    "gravity": "center",
+                                    "weight": "regular",
+                                    "offsetEnd": "sm"
+                                }],
+                                "flex": 5,
+                                "backgroundColor": "#004a85",
+                                "borderWidth": "1px",
+                                "borderColor": "#004c85",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "฿ 25.00",
+                                    "color": "#004d75",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "weight": "regular"
+                                }],
+                                "flex": 3,
+                                "backgroundColor": "#f9f9f9",
+                                "borderWidth": "1px",
+                                "borderColor": "#dddddd",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            }
+                        ],
+                        "flex": 0,
+                        "paddingStart": "md",
+                        "paddingEnd": "md",
+                        "margin": "xs"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "spacing": "xs",
+                        "contents": [{
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "$501 - $1,000",
+                                    "color": "#ffffff",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "end",
+                                    "gravity": "center",
+                                    "weight": "regular",
+                                    "offsetEnd": "sm"
+                                }],
+                                "flex": 5,
+                                "backgroundColor": "#004a85",
+                                "borderWidth": "1px",
+                                "borderColor": "#004c85",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "฿ 25.25",
+                                    "color": "#004d75",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "weight": "regular"
+                                }],
+                                "flex": 3,
+                                "backgroundColor": "#f9f9f9",
+                                "borderWidth": "1px",
+                                "borderColor": "#dddddd",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            }
+                        ],
+                        "flex": 0,
+                        "paddingStart": "md",
+                        "paddingEnd": "md",
+                        "margin": "xs"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "margin": "xs",
+                        "spacing": "xs",
+                        "contents": [{
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "$1,001 - $1,500",
+                                    "color": "#ffffff",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "end",
+                                    "gravity": "center",
+                                    "weight": "regular",
+                                    "offsetEnd": "sm"
+                                }],
+                                "flex": 5,
+                                "backgroundColor": "#004a85",
+                                "borderWidth": "1px",
+                                "borderColor": "#004c85",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "฿ 25.50",
+                                    "color": "#004d75",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "weight": "regular"
+                                }],
+                                "flex": 3,
+                                "backgroundColor": "#f9f9f9",
+                                "borderWidth": "1px",
+                                "borderColor": "#dddddd",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            }
+                        ],
+                        "flex": 0,
+                        "paddingStart": "md",
+                        "paddingEnd": "md"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "margin": "xs",
+                        "spacing": "xs",
+                        "contents": [{
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "$1,501 - $2,000",
+                                    "color": "#ffffff",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "end",
+                                    "gravity": "center",
+                                    "weight": "regular",
+                                    "offsetEnd": "md"
+                                }],
+                                "flex": 5,
+                                "backgroundColor": "#004a85",
+                                "borderWidth": "1px",
+                                "borderColor": "#004c85",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "฿ 25.75",
+                                    "color": "#004d75",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "weight": "regular"
+                                }],
+                                "flex": 3,
+                                "backgroundColor": "#f9f9f9",
+                                "borderWidth": "1px",
+                                "borderColor": "#dddddd",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            }
+                        ],
+                        "flex": 0,
+                        "paddingStart": "md",
+                        "paddingEnd": "md"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "margin": "xs",
+                        "spacing": "xs",
+                        "contents": [{
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "$2,001 - $10,000",
+                                    "color": "#ffffff",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "end",
+                                    "gravity": "center",
+                                    "weight": "regular",
+                                    "offsetEnd": "sm"
+                                }],
+                                "flex": 5,
+                                "backgroundColor": "#004a85",
+                                "borderWidth": "1px",
+                                "borderColor": "#004c85",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "spacing": "xs",
+                                "contents": [{
+                                    "type": "text",
+                                    "text": "฿ 26.00",
+                                    "color": "#004d75",
+                                    "size": "sm",
+                                    "flex": 0,
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "weight": "regular"
+                                }],
+                                "flex": 3,
+                                "backgroundColor": "#f9f9f9",
+                                "borderWidth": "1px",
+                                "borderColor": "#dddddd",
+                                "cornerRadius": "4px",
+                                "paddingAll": "md"
+                            }
+                        ],
+                        "flex": 0,
+                        "paddingStart": "md",
+                        "paddingEnd": "md"
+                    },
+                    {
+                        "type": "spacer",
+                        "size": "md"
+                    }
+                ],
+                "flex": 0,
+                "spacing": "sm",
+                "backgroundColor": "#ffffff",
+                "paddingAll": "xs"
+            },
+            "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [{
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [{
+                            "type": "button",
+                            "style": "primary",
+                            "height": "md",
+                            "action": {
+                                "type": "uri",
+                                "label": "แจ้งโอน",
+                                "uri": "line://app/1609045774-gxlowX0E"
+                            },
+                            "color": "#004d85",
+                            "gravity": "center",
+                            "margin": "md"
+                        }],
+                        "position": "relative",
+                        "flex": 0,
+                        "spacing": "md",
+                        "paddingStart": "md",
+                        "paddingEnd": "md"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [{
+                            "type": "button",
+                            "style": "secondary",
+                            "height": "md",
+                            "action": {
+                                "type": "message",
+                                "label": "กลับเมนูหลัก",
+                                "text": "อัตราแลกเปลี่ยน"
+                            },
+                            "color": "#e9e9e9",
+                            "gravity": "center",
+                            "margin": "md"
+                        }],
+                        "position": "relative",
+                        "flex": 0,
+                        "spacing": "md",
+                        "paddingStart": "md",
+                        "paddingEnd": "md"
+                    },
+                    {
+                        "type": "spacer",
+                        "size": "md"
+                    }
+                ],
+                "flex": 0,
+                "width": "100%",
+                "backgroundColor": "#f9f9f9",
+                "paddingAll": "xs"
+            },
+            "styles": {
+                "body": {
+                    "backgroundColor": "#ffffff"
+                }
+            }
+        }
+    ]
+}
