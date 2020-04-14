@@ -2,5 +2,5 @@
     "port": 3000,
     "channelAccessToken": "/XwzTgvE8CYb7EyTgaE0YT2G+JTi12ptpxZHrJMBkCF3dHj6u4oVCspcpiF9a9Kwupf+6SykgvFjKm0rvi4UoWWiwSV8/GUd5mHDnDAT5VDpmJ5UPCdfByunXu3cNKMd4HJHvjrVBwg/KWyajdQYwAdB04t89/1O/w1cDnyilFU=",
     "channelSecret": "d2cdc6cddca0a800cedd3209226e0f55",
-    "baseUrl": "./node_modules/ngrok/bin/ngrok http 3000"
+    "baseUrl": "http://localhost:3000"
 }

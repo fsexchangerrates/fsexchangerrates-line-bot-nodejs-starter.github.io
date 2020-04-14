@@ -3,6 +3,7 @@
 const line = require('@line/bot-sdk');
 const express = require('express');
 const config = require('./config.json');
+const ngrok = require('ngrok');
 
 const message1 = require('./messagesTemp/message1.json');
 const data1 = require('./messagesTemp/data1.json');
@@ -12,7 +13,7 @@ const webMoney = require('./messagesTemp/webMoney.json');
 let richMenuId1 = 'ur46il;-ufki75rrf';
 let richMenuId2 = 'jyrsscvgu8oolncsqtthh';
 
-let baseUrl = config.baseUrl;
+let baseUrl = config.baseUrl || ngrok();
 
 // create LINE SDK client
 const client = new line.Client(config);
@@ -23,6 +24,7 @@ app.use(line.middleware(config));
 app.use(client.replyMessage());
 
 app.use(baseUrl);
+app.use(ngrok('https', config.port));
 
 app.get('/webhook', line.middleware(config), (req, res) => {
     console.log('I am listening. Go see post');
