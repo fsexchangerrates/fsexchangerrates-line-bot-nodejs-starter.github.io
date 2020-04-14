@@ -19,6 +19,11 @@ const client = new line.Client(config);
 
 const app = express();
 
+app.use(line.middleware(config));
+app.use(client.replyMessage());
+
+app.use(baseUrl);
+
 app.get('/webhook', line.middleware(config), (req, res) => {
     console.log('I am listening. Go see post');
 });
@@ -46,9 +51,10 @@ app.post('/webhook', line.middleware(config), (req, res) => {
 });
 
 async function linkRichMenuToUser(userId, richMenuId) {
-    await client.linkRichMenuToUser(userId, richMenuId);
+    console.log('linkRichMenuToUser', linkRichMenuToUser);
+
+    return client.linkRichMenuToUser(userId, richMenuId);
 };
-console.log('linkRichMenuToUser', linkRichMenuToUser);
 
 // simple reply function
 const replyText = (token, texts) => {
@@ -102,7 +108,7 @@ function handleEvent(event) {
                 case 'data1':
                     return replyText(event.replyToken, data1);
                 case 'greeting':
-                    return replyText(event.replyToken, greeting);
+                    return replyText(event.replyToken, `${JSON.stringify(greeting)}`);
                 case 'paypal':
                     return replyText(event.replyToken, paypal);
                 case 'webMoney':
