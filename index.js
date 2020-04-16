@@ -52,9 +52,7 @@ app.post('/webhook', line.middleware(config), (req, res) => {
         });
 });
 
-async function linkRichMenuToUser(userId, richMenuId) {
-    console.log('linkRichMenuToUser', linkRichMenuToUser);
-
+const linkRichMenuToUser = (userId, richMenuId) => {
     return client.linkRichMenuToUser(userId, richMenuId);
 };
 
@@ -108,13 +106,13 @@ function handleEvent(event) {
                 case 'previous':
                     return linkRichMenuToUser(event.source.userId, `${richMenuId1}`);
                 case 'data1':
-                    return replyText(event.replyToken, data1);
+                    return replyText(event.replyToken, `${JSON.stringify(data1)}`);
                 case 'greeting':
                     return replyText(event.replyToken, `${JSON.stringify(greeting)}`);
                 case 'paypal':
-                    return replyText(event.replyToken, paypal);
+                    return replyText(event.replyToken, `${JSON.stringify(paypal)}`);
                 case 'webMoney':
-                    return replyText(event.replyToken, webMoney);
+                    return replyText(event.replyToken, `${JSON.stringify(webMoney)}`);
                 default:
                     return replyText(event.replyToken, `Got postback: ${data}`);
             }
