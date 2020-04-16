@@ -1,6 +1,6 @@
 {
     "port": 3000,
-    "channelAccessToken": "/XwzTgvE8CYb7EyTgaE0YT2G+JTi12ptpxZHrJMBkCF3dHj6u4oVCspcpiF9a9Kwupf+6SykgvFjKm0rvi4UoWWiwSV8/GUd5mHDnDAT5VDpmJ5UPCdfByunXu3cNKMd4HJHvjrVBwg/KWyajdQYwAdB04t89/1O/w1cDnyilFU=",
-    "channelSecret": "d2cdc6cddca0a800cedd3209226e0f55",
-    "baseUrl": "http://localhost:3000"
+    "channelAccessToken": "TbVzKKpUT9OLNpcpjEx5u/4uo3XZ8EIqZnai6jcqNLdVa+Lrbu0JGzn0flOFiHM2upf+6SykgvFjKm0rvi4UoWWiwSV8/GUd5mHDnDAT5VCRxW8pYTqu5hXxFTMJZRmEwmKwzbxjtLLPD2MghVcIkwdB04t89/1O/w1cDnyilFU=",
+    "channelSecret": "e881a567bb669d2da8806d4ccafe41cc",
+    "channelId": "1654063227"
 }
