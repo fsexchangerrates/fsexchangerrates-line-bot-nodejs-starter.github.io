@@ -1,0 +1,25 @@
+{
+        "compileOnSave": true,
+        "compilerOptions": {
+                "allowJs": true,
+                "module": "CommonJS",
+                "target": "ES2015",
+                "rootDir": "index.js",
+                "baseUrl": ".",
+                "paths": {
+                        "*": [
+                                "/node_modules/ngrok"
+                        ]
+                },
+                "esModuleInterop": true,
+                "jsx": "preserve",
+                "lib": ["ES2015", "ES5", "ES6", "ES7", "ESNext"],
+                "sourceMap": true
+        },
+        "include": [
+                "*"
+        ],
+        "exclude": [
+                "/node_modules"
+        ]
+}
