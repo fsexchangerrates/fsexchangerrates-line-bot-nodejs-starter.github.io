@@ -1,5 +1,3 @@
-'use strict';
-
 const line = require('@line/bot-sdk');
 const express = require('express');
 const config = require('./config.json');
@@ -13,7 +11,9 @@ const webMoney = require('./messagesTemp/webMoney.json');
 let richMenuId1 = 'ur46il;-ufki75rrf';
 let richMenuId2 = 'jyrsscvgu8oolncsqtthh';
 
-let baseUrl = config.baseUrl || ngrok();
+const middleware = line.middleware;
+
+let baseUrl = `${ngrok} http ${config.port}`;
 
 // create LINE SDK client
 const client = new line.Client(config);
@@ -21,16 +21,16 @@ const client = new line.Client(config);
 const app = express();
 
 app.use(line);
+app.use(middleware(config));
 app.use(client);
 
 app.use(baseUrl);
-app.use(ngrok('https', config.port));
 
-app.get('/webhook', line.middleware(config), (req, res) => {
+app.get('/webhook', (req, res) => {
     console.log('I am listening. Go see post');
 });
 // webhook callback
-app.post('/webhook', line.middleware(config), (req, res) => {
+app.post('/webhook', middleware(config), (req, res) => {
     // req.body.events should be an array of events
     if (!Array.isArray(req.body.events)) {
         return res.status(500).end();
@@ -66,6 +66,9 @@ const replyText = (token, texts) => {
 };
 // callback function to handle a single event
 function handleEvent(event) {
+    if (event.replyToken && event.replyToken.match(/^(\*>1)/i)) {
+        return console.log('Message sent from: ' + event.replyToken, `${JSON.stringify(event.message)}`);
+    }
     switch (event.type) {
         case 'message':
             const message = event.message;
